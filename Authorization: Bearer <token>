@@ -1,0 +1,9 @@
+```java
+@Path("/hello")
+public class HelloResource {
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public Map<String, String> hello() {
+        return Map.of("message", "Hello from Quarkus ⚡");
+    }
+}
